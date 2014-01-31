@@ -1,4 +1,4 @@
-# rc.d script for boottime SCT ERC configuration #
+# rc.d script for boot time SCT ERC configuration #
 
 ## Synopsis ##
 
@@ -28,7 +28,7 @@ of recovering from errors and not losing data.
 
 Disks designed for RAID usage, in contrast, have this feature enabled
 by default and set a small timeout (usually 7 seconds), as in
-redundant environement data may be quickly accessed from another
+redundant environment data may be quickly accessed from another
 device, and a single disk should not delay requests for too long,
 degrading array performance.
 
