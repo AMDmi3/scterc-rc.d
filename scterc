@@ -3,6 +3,32 @@
 # PROVIDE: scterc
 # REQUIRE: LOGIN
 # KEYWORD: nojail
+#
+# Add the following lines to /etc/rc.conf to enable changing SCT
+# (SMART Control Transport) ERC (Error Recovery Control) settings
+# on your disks at boot time
+#
+# scterc_enable:                Set to "YES" to enable configuring SCT ERC
+#
+# scterc_disks:                 Space separated list of disk devices to
+#                               configure in either "/dev/ada0" or "ada0"
+#                               format
+# scterc_read_timeout:          Set default read timeout in tenths of a
+#                               second or 0 for infinity. Default is 70
+#                               (7 seconds)
+# scterc_write_timeout:         Set default write timeout in tenths of a
+#                               second or 0 for infinity. Default is 70
+#                               (7 seconds)
+#
+# scterc_groups:                Space separated list of disk groups. Use if
+#                               you need different settings for specific
+#                               disk groups.
+# scterc_{group}_disks:         List of disks for a group
+# scterc_{group}_read_timeout:  Read timeout for a group (defaults to
+#                               scterc_read_timeout if not specified)
+# scterc_{group}_write_timeout: Write timeout for a group (defauts to
+#                               scterc_write_timeout if not specified)
+#
 
 . /etc/rc.subr
 
