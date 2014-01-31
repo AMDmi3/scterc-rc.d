@@ -126,7 +126,8 @@ To check your configuration, you can run script by hand, after which it will pri
 
 ```
 $ /usr/local/etc/rc.d/scterc start
-Setting SCT ERC on disks: ada0:100,100 ada1:100,100 ada2:120,120 ada3:120,120 ada4:140,100 ada5:140,100.
+Setting SCT ERC on disks: ada0:100,100 ada1:100,100 ada2:120,120 ada3:120,120
+ada4:140,100 ada5:140,100.
 $
 ```
 
