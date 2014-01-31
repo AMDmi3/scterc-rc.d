@@ -144,7 +144,7 @@ if that happens, check your config and/or run smartctl by hand as specified abov
 * [smartctl(8) manual page](http://smartmontools.sourceforge.net/man/smartctl.8.html)
 * [Wikipedia article on ERC](http://en.wikipedia.org/wiki/Error_recovery_control)
 * [Article on SCT ERC](http://habrahabr.ru/post/92701/) (Russian)
-* Documentation on your hard drive
+* Your hard drive's documentation
 
 ## License ##
 
