@@ -1,4 +1,4 @@
-# rc.d script for boot time SCT ERC configuration #
+# configure SCT ERC on FreeBSD startup #
 
 ## Synopsis ##
 
