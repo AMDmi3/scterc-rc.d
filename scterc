@@ -51,7 +51,7 @@ scterc_start()
 {
 	local _group _disks _read_timeout _write_timeout _disk _device _result
 
-	check_startmsgs && echo -n 'Setting SCTERC on disks:'
+	check_startmsgs && echo -n 'Setting SCT ERC on disks:'
 
 	for _group in '' ${scterc_groups}; do
 		if [ -z "$_group" ]; then
