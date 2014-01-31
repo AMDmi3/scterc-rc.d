@@ -15,7 +15,7 @@ load_rc_config $name
 : ${scterc_disks=""}
 : ${scterc_read_timeout="70"}
 : ${scterc_write_timeout="70"}
-: ${scterc_disk_groups=""}
+: ${scterc_groups=""}
 
 command="/usr/local/sbin/smartctl"
 start_cmd="scterc_start"
@@ -27,7 +27,7 @@ scterc_start()
 
 	check_startmsgs && echo -n 'Setting SCTERC on disks:'
 
-	for _group in '' ${scterc_disk_groups}; do
+	for _group in '' ${scterc_groups}; do
 		if [ -z "$_group" ]; then
 			# handle default group
 			_disks="${scterc_disks}"
